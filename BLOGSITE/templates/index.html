@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>
+    Home
+</title>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="tm-main-content tm-gallery-container">
+                    <div class="grid">
+                        {% for img in images %}
+                        <div class="grid-item"><img src="{{ img }}" alt="Image"></div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+{% endblock %}
